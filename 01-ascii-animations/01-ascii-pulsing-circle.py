@@ -20,15 +20,15 @@ def main():
     # backgroundPixels = ".,:;`'\""
     backgroundPixels = ".,"
 
-    colsNum = 32
-    rowsNum = 32
+    colsNum = 24
+    rowsNum = 24
     frameCount = 0
     loopFramesNum = 128
     aspectRatio = colsNum / rowsNum
     frameRate = 60
 
-    centerX = colsNum / 2 / aspectRatio
-    centerY = rowsNum / 2
+    centerX = (colsNum - 1) / 2 / aspectRatio
+    centerY = (rowsNum - 1) / 2
     minRadius = rowsNum / 16
     maxRadius = rowsNum / 3
 
