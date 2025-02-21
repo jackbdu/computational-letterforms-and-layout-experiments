@@ -6,6 +6,7 @@ import random
 
 
 def clearScreen():
+    # https://stackoverflow.com/a/2084628
     os.system("cls" if os.name == "nt" else "clear")
 
 
@@ -57,6 +58,7 @@ def main():
                 rows.append(" ".join(row))
 
             frame = "\n".join(rows)
+            # https://stackoverflow.com/a/50560686
             print("\033[H")
             print(frame)
             time.sleep(1 / frameRate)
